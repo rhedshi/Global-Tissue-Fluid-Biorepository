@@ -8,12 +8,12 @@
 
 import UIKit
 
-class AddViewController: UIViewController {
+class AddViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.title = "Add"
+        self.navigationController?.navigationBar.barTintColor = UIColor.whiteColor()
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.blackColor()]
     }
 
     @IBAction func cancelButtonPressed(sender: UIBarButtonItem) {

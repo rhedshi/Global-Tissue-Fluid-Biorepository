@@ -15,6 +15,11 @@
 		4D1F6A3019F96B9A006ED6F3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D1F6A2E19F96B9A006ED6F3 /* LaunchScreen.xib */; };
 		4D1F6A3C19F96B9A006ED6F3 /* RFB_BioRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1F6A3B19F96B9A006ED6F3 /* RFB_BioRepositoryTests.swift */; };
 		4D1F6A4619FA1035006ED6F3 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1F6A4519FA1035006ED6F3 /* AddViewController.swift */; };
+		4DBD8E751A871B92006709A1 /* RFBImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBD8E741A871B92006709A1 /* RFBImage.swift */; };
+		4DBD8E771A8730CE006709A1 /* RFBSpecimen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBD8E761A8730CE006709A1 /* RFBSpecimen.swift */; };
+		4DBD8E791A8733D3006709A1 /* RFBSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBD8E781A8733D3006709A1 /* RFBSubject.swift */; };
+		4DC19AFB1A8710D10066D617 /* RFBButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC19AFA1A8710D10066D617 /* RFBButton.swift */; };
+		4DC19AFD1A8710F50066D617 /* RFBColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC19AFC1A8710F50066D617 /* RFBColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,11 @@
 		4D1F6A3A19F96B9A006ED6F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D1F6A3B19F96B9A006ED6F3 /* RFB_BioRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RFB_BioRepositoryTests.swift; sourceTree = "<group>"; };
 		4D1F6A4519FA1035006ED6F3 /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		4DBD8E741A871B92006709A1 /* RFBImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RFBImage.swift; sourceTree = "<group>"; };
+		4DBD8E761A8730CE006709A1 /* RFBSpecimen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RFBSpecimen.swift; sourceTree = "<group>"; };
+		4DBD8E781A8733D3006709A1 /* RFBSubject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RFBSubject.swift; sourceTree = "<group>"; };
+		4DC19AFA1A8710D10066D617 /* RFBButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RFBButton.swift; sourceTree = "<group>"; };
+		4DC19AFC1A8710F50066D617 /* RFBColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RFBColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +96,7 @@
 				4D1F6A4519FA1035006ED6F3 /* AddViewController.swift */,
 				4D1F6A2919F96B9A006ED6F3 /* Main.storyboard */,
 				4D1F6A2C19F96B9A006ED6F3 /* Images.xcassets */,
+				4DC19AF81A87102A0066D617 /* Utilities */,
 				4D1F6A2E19F96B9A006ED6F3 /* LaunchScreen.xib */,
 				4D1F6A2419F96B9A006ED6F3 /* RFB_BioRepository.xcdatamodeld */,
 				4D1F6A2019F96B9A006ED6F3 /* Supporting Files */,
@@ -116,6 +127,18 @@
 				4D1F6A3A19F96B9A006ED6F3 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4DC19AF81A87102A0066D617 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4DC19AFA1A8710D10066D617 /* RFBButton.swift */,
+				4DC19AFC1A8710F50066D617 /* RFBColor.swift */,
+				4DBD8E741A871B92006709A1 /* RFBImage.swift */,
+				4DBD8E761A8730CE006709A1 /* RFBSpecimen.swift */,
+				4DBD8E781A8733D3006709A1 /* RFBSubject.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +185,7 @@
 		4D1F6A1519F96B9A006ED6F3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = RFB;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = MGH;
 				TargetAttributes = {
@@ -220,8 +244,13 @@
 			files = (
 				4D1F6A2819F96B9A006ED6F3 /* ViewController.swift in Sources */,
 				4D1F6A2319F96B9A006ED6F3 /* AppDelegate.swift in Sources */,
+				4DBD8E791A8733D3006709A1 /* RFBSubject.swift in Sources */,
+				4DBD8E771A8730CE006709A1 /* RFBSpecimen.swift in Sources */,
+				4DC19AFD1A8710F50066D617 /* RFBColor.swift in Sources */,
 				4D1F6A4619FA1035006ED6F3 /* AddViewController.swift in Sources */,
 				4D1F6A2619F96B9A006ED6F3 /* RFB_BioRepository.xcdatamodeld in Sources */,
+				4DBD8E751A871B92006709A1 /* RFBImage.swift in Sources */,
+				4DC19AFB1A8710D10066D617 /* RFBButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +444,7 @@
 				4D1F6A4119F96B9A006ED6F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4D1F6A4219F96B9A006ED6F3 /* Build configuration list for PBXNativeTarget "RFB BioRepositoryTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +453,7 @@
 				4D1F6A4419F96B9A006ED6F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

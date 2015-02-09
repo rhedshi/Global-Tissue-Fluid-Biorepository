@@ -16,5 +16,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
     }
+    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent
+    }
 }
-
